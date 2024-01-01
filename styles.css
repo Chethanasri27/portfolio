@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(wall.jpg);
+    color: #fff; /* Text color */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent; /* Dark background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+header {
+    background-image: url(wall.jpg);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Larger font size */
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: transparent;
+}
+
+h2 {
+    color: #00415d; /* Netflix red */
+    font-size: 1.5em; /* Larger font size */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* Animation for the header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Photography Section Styles */
+#photography {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.photo-gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
